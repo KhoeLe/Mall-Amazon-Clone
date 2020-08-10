@@ -11,7 +11,8 @@ function App() {
           <Route path="/checkout">
             <Header />
             <h1>This from check out</h1>
-             <h1> Hello Louis Le for check out </h1>
+            <br/>
+            <h5> Hello Louis Le for check out </h5>
           </Route>
           <Route  path="/login">
             <Header /> 

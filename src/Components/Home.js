@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Styles/Home.css"
 import Product from "./Product"
+
 function Home() {
     return (
         <div className="home">
@@ -10,44 +11,43 @@ function Home() {
             <div className="home__row">
                 <Product 
                 id="123"
-                tiles="365 Days in Italy Picture-A-Day Wall Calendar 2021"
+                tiles="Apple iPhone XR, 64GB, Black "
                 ratting={5}
                 price={11.95}
-                image="https://images-na.ssl-images-amazon.com/images/I/61D3Kq0glXL._SX258_BO1,204,203,200_.jpg"
+                image="https://images-na.ssl-images-amazon.com/images/I/81FyKX6ml6L._AC_SL1500_.jpg"
             />
-                <Product 
+             <Product 
                 id="123"
-                tiles="365 Days in Italy Picture-A-Day Wall Calendar 2021"
+                tiles="Apple iPhone 8 Plus, 64GB, Space Gray"
                 ratting={5}
                 price={11.95}
-                image="https://images-na.ssl-images-amazon.com/images/I/61D3Kq0glXL._SX258_BO1,204,203,200_.jpg"
+                image="https://images-na.ssl-images-amazon.com/images/I/61rgVTYeoAL._AC_SL1500_.jpg"
             />
             </div>
             <div className="home__row">
                 <Product 
                 id="123"
-                tiles="365 Days in Italy Picture-A-Day Wall Calendar 2021"
+                tiles="Apple iPhone 11, 64GB, Unlocked "
                 ratting={5}
                 price={11.95}
-                image="https://images-na.ssl-images-amazon.com/images/I/61D3Kq0glXL._SX258_BO1,204,203,200_.jpg"
+                image="https://images-na.ssl-images-amazon.com/images/I/61DanysfE8L._AC_SL1500_.jpg"
             />
                 <Product 
                 id="123"
-                tiles="365 Days in Italy Picture-A-Day Wall Calendar 2021"
+                tiles="Apple iPhone 11 Pro (512GB, Midnight Green)"
                 ratting={5}
                 price={11.95}
-                image="https://images-na.ssl-images-amazon.com/images/I/61D3Kq0glXL._SX258_BO1,204,203,200_.jpg"
+                image="https://m.media-amazon.com/images/I/81mxun+6pEL.jpg"
             />
-                <Product 
+                {/* <Product 
                 id="123"
-                tiles="365 Days in Italy Picture-A-Day Wall Calendar 2021"
+                tiles="Apple iPhone 11 (64GB, Yellow) "
                 ratting={5}
                 price={11.95}
-                image="https://images-na.ssl-images-amazon.com/images/I/61D3Kq0glXL._SX258_BO1,204,203,200_.jpg"
-            />
-            </div>
-
-
+                // image="https://images-na.ssl-images-amazon.com/images/I/81FyKX6ml6L._AC_SL1500_.jpg"
+                img='./Images/iphone11.png'
+            />    */}
+            </div> 
         </div>
     )
 }
