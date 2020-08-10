@@ -10,7 +10,7 @@ function App() {
         <Switch>
           <Route path="/checkout">
             <Header />
-            <h1>This from check out</h1>
+            <h1>This from check out  Helllo git</h1>
           </Route>
           <Route  path="/login">
             <Header /> 
@@ -18,7 +18,7 @@ function App() {
           </Route>
           <Route  path="/">
                 <Header />
-                 <Home />
+                <Home />
             
           </Route>
         </Switch>
