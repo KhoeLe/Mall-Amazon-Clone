@@ -1,0 +1,68 @@
+.header__logo{
+    max-width: 130px;
+    object-fit: contain;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 16px;
+
+}
+.header{
+    display: flex;
+    background: #131921;
+    align-items: center;
+    position: sticky; /* đùng để cố định navbar di chuyển đến cuối cùng trang web cũng thấy navbar */
+    top: 0;
+    z-index: 100;
+}
+.header__navbar{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .header__link{
+    color: white;
+    text-decoration: none;
+ }
+ .header__option{
+     display: flex;
+     flex-direction: column;
+     margin-left: 10px;
+     
+ }
+.header__search{
+    display: flex;
+    flex: 1;
+    
+}
+.header__searchInput{
+    height: 12px;
+    padding: 10px;  /*   đệm */
+    border: none;  /* biên giới */
+    width: 100%;
+    border-radius: 4px;
+}
+.header__searchIcon{
+    background: #cd9042;
+    padding: 4px;
+    border-radius: 4px;
+}
+.header__optionLineOne{
+    font-size: 9px;
+    opacity: 0.8;
+}
+.header__optionLineTwo{
+    font-size: 13px;
+    font-weight: 600;
+}
+.header__optionBasket{
+    display: flex;
+    color: white;
+}
+.header__BasketCount{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+/* .ONE{
+    color: white;
+} */
