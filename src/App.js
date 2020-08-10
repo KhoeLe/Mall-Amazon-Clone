@@ -10,7 +10,8 @@ function App() {
         <Switch>
           <Route path="/checkout">
             <Header />
-            <h1>This from check out  Helllo git</h1>
+            <h1>This from check out</h1>
+             <h1> Hello Louis Le for check out </h1>
           </Route>
           <Route  path="/login">
             <Header /> 
