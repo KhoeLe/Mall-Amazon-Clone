@@ -3,7 +3,8 @@ import "./Styles/Product.css"
 import { useStateValue } from "./StateProvider";
 function Product({id, tiles, ratting, price, image}) {
     
-    const [{ }, dispatch] = useStateValue();
+    const [{}, dispatch] = useStateValue();
+    // console.log({id, tiles, ratting, price, image});
     const addtoBasket = () => {
         dispatch({
             type: "ADD_TO_BASKET",
@@ -20,6 +21,7 @@ function Product({id, tiles, ratting, price, image}) {
 
     return (
         <div className="product">
+         <img src={image} alt=""/>
             <div className="product__info">
                 <p >{tiles}</p>
                 <p className="product__price">
@@ -37,7 +39,7 @@ function Product({id, tiles, ratting, price, image}) {
                 }
                 </div>
             </div>  
-                <img src={image} alt=""/>
+               
                 <button onClick={addtoBasket}>Add to basket</button>
         </div>
     )

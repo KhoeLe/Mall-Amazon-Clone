@@ -48,7 +48,7 @@
             </NavLink>
             {/* 4th link */}
 
-            <NavLink to="/"  className="header__link">
+            <NavLink to="/checkout"  className="header__link">
             <div className="header__optionBasket">
                 <ShoppingBasketIcon />
                 <span className="header__BasketCount">{basket?.length}</span>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header"
 import Home from "./Components/Home"
+import Checkout from "./Components/Checkout"
 function App() {
   return (
     <Router>
@@ -10,9 +11,7 @@ function App() {
         <Switch>
           <Route path="/checkout">
             <Header />
-            <h1>This from check out</h1>
-            <br/>
-            <h5> Hello Louis Le for check out </h5>
+            <Checkout />
           </Route>
           <Route  path="/login">
             <Header /> 
