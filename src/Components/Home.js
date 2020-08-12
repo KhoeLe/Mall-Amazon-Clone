@@ -14,14 +14,14 @@ function Home() {
                 tiles="Apple iPhone XR, 64GB, Black "
                 ratting={5}
                 price={11.95}
-                image="https://images-na.ssl-images-amazon.com/images/I/81FyKX6ml6L._AC_SL1500_.jpg"
+                image="https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-400x460.png"
             />
              <Product 
                 id="123"
-                tiles="Apple iPhone 8 Plus, 64GB, Space Gray"
+                tiles="Điện thoại iPhone 11 256GB"
                 ratting={5}
-                price={11.95}
-                image="https://images-na.ssl-images-amazon.com/images/I/61rgVTYeoAL._AC_SL1500_.jpg"
+                price={29.0580}
+                image="https://cdn.tgdd.vn/Products/Images/42/210648/iphone-11-256gb-black-400x460.png"
             />
             </div>
             <div className="home__row">
@@ -34,20 +34,30 @@ function Home() {
             />
                 <Product 
                 id="123"
-                tiles="Apple iPhone 11 Pro (512GB, Midnight Green)"
+                tiles="Điện thoại iPhone Xs 64GB"
                 ratting={5}
                 price={11.95}
-                image="https://m.media-amazon.com/images/I/81mxun+6pEL.jpg"
+                image="https://cdn.tgdd.vn/Products/Images/42/190323/iphone-xs-gold-400x460-1-400x460.png"
             />
-                {/* <Product 
+                <Product 
                 id="123"
                 tiles="Apple iPhone 11 (64GB, Yellow) "
                 ratting={5}
                 price={11.95}
-                // image="https://images-na.ssl-images-amazon.com/images/I/81FyKX6ml6L._AC_SL1500_.jpg"
-                img='./Images/iphone11.png'
-            />    */}
+                 image="https://cdn.tgdd.vn/Products/Images/42/149456/iphone-se-2020-do-400x460-400x460.png"
+                
+            />   
             </div> 
+            <div className="row">
+                <Product 
+                id="123"
+                tiles="Apple iPhone 11 (64GB, Yellow) "
+                ratting={5}
+                price={11.95}
+                 image="https://cdn.tgdd.vn/Products/Images/42/149456/iphone-se-2020-do-400x460-400x460.png"
+                
+                />
+            </div>
         </div>
     )
 }
