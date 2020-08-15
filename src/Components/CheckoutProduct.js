@@ -2,6 +2,8 @@ import React from 'react';
 import "./Styles/CheckoutProduct.css";
 import { useStateValue } from "./StateProvider";
 function CheckoutProduct({id, tiles, ratting, price, image}) {
+
+    // eslint-disable-next-line
     const [{basket}, dispatch] = useStateValue();
     
     const removetoBasket = () =>{

@@ -44,7 +44,7 @@ function Home() {
                 tiles="Apple iPhone 11 (64GB, Yellow) "
                 ratting={5}
                 price={11.95}
-                 image="https://cdn.tgdd.vn/Products/Images/42/149456/iphone-se-2020-do-400x460-400x460.png"
+                image="https://cdn.tgdd.vn/Products/Images/42/149456/iphone-se-2020-do-400x460-400x460.png"
                 
             />   
             </div> 

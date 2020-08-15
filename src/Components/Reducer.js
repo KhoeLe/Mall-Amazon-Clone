@@ -28,6 +28,11 @@
     const Reducer = (state, action) => {
     console.log(action);
     switch (action.type) {
+        case "SET_USER": // add them để biết dc hành động của user
+        return{
+            ...state,
+            user:action.user,
+        }
         case "ADD_TO_BASKET":
         //logic add items vào giỏ hàng (basket)
         return {
