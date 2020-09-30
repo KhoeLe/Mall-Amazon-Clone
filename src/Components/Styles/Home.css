@@ -3,6 +3,7 @@
     margin-right: auto;
     max-width: 1700px;
     /* min-width: 260px; */
+    
 }
 .home__imgBanner{
     width: 100%;
@@ -19,4 +20,5 @@
     z-index: -1;
     margin-left: 5px;
     margin-right: 2px;
+    
 } 

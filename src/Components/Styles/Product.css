@@ -32,7 +32,11 @@
     width: 100%;
     margin-bottom: 15px; 
     object-fit: contain;
+    transition: transform 450ms; /* hieu ung css    */
     
+}
+.product > img:hover{
+    transform: scale(1.09);
 }
 .product >button{
     background-color: #f0c14b;

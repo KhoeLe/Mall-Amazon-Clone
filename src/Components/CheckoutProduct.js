@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Styles/CheckoutProduct.css";
 import { useStateValue } from "./StateProvider";
-function CheckoutProduct({id, tiles, ratting, price, image}) {
+function CheckoutProduct({id, tiles, ratting, price, image, hideButton}) {
 
     // eslint-disable-next-line
     const [{basket}, dispatch] = useStateValue();
@@ -33,7 +33,9 @@ function CheckoutProduct({id, tiles, ratting, price, image}) {
                     ))
                 }
                 </div>
-                <button onClick={removetoBasket}>Remove to Basket</button>
+                {!hideButton && (
+                    <button onClick={removetoBasket}>Remove from Basket</button>
+                )}
             </div>  
  
         </div>

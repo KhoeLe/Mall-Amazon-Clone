@@ -7,6 +7,14 @@ import Checkout from "./Components/Checkout"
 import Login from "./Components/Login"
 import { useStateValue } from "./Components/StateProvider"
 import { auth } from "./Components/firebase"
+import Payment from "./Components/Payment"
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+import Orders from "./Components/Orders"
+const promise = loadStripe(
+  "pk_test_51HQSUlLYbhqcdejB6yrfYV6t5oggmTLgdKTM6unV6csbepvxSF9FSnsrTEHZPwnQ0FMT7Ncvz0gqssLXupq0CvP400R8OQUZM4"
+);
+
 function App() {
 
 const [{ user}, dispatch ] = useStateValue();
@@ -18,8 +26,6 @@ const [{ user}, dispatch ] = useStateValue();
       const unsubscribe = auth.onAuthStateChanged((authUser) =>{
         if(authUser){
           // xác thực đc user login page
-
-
           dispatch({
             type: "SET_USER",
             user: authUser,
@@ -45,8 +51,11 @@ const [{ user}, dispatch ] = useStateValue();
 
   return (
     <Router>
-      <div className="app">
         <Switch>
+          <Route path="/orders">
+                <Header />
+                <Orders />
+          </Route>
           <Route path="/checkout">
             <Header />
             <Checkout />
@@ -54,12 +63,17 @@ const [{ user}, dispatch ] = useStateValue();
           <Route  path="/login">
             <Login />
           </Route>
-          <Route  path="/">
+          <Route  path="/payment">
+            <Header />
+            <Elements stripe={promise}>
+                <Payment />
+            </Elements>
+          </Route>
+          <Route path="/">
                 <Header />
                 <Home />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }

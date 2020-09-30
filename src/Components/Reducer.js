@@ -39,6 +39,11 @@
             ...state,
             basket: [...state.basket, action.item],
         };
+        case "EMPTY_BASKET":
+        return{
+            ...state,
+            basket: [],
+        }
         case "REMOVE_FROM_BASKET":
         //logic xóa sản phẩm trong giỏ hàng
             let newBasket = [...state.basket];

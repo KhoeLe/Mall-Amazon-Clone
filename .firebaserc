@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "louisle-mall",
+    "sting": "louisle-mall",
+    "staging": "louisle-mall"
+  }
+}
